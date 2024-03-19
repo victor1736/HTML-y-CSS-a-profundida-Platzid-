@@ -147,16 +147,16 @@ main {
 /* ------------------------------------------------------ */
 
 .social-media {
-    background-color: #20e916; /* Fondo del contenedor */
+    background-color: #20e916; 
     display: flex;
-    justify-content: space-around; /* Distribución equitativa de los elementos */
-    padding: 30px; /* Espaciado interno */
+    justify-content: space-around; 
+    padding: 30px; 
 }
 
 .social-icon {
-    width: 40px; /* Ancho inicial de los iconos */
-    height: 40px; /* Altura inicial de los iconos */
-    transition: transform 0.3s ease; /* Transición para el cambio de tamaño */
+    width: 40px; 
+    height: 40px; 
+    transition: transform 0.3s ease; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,33 +164,33 @@ main {
 }
 
 .social-icon i {
-    font-size: 24px; /* Tamaño del icono */
-    color: #fff; /* Color del icono */
+    font-size: 24px; 
+    color: #fff; 
 }
 
 .social-icon:hover {
-    transform: scale(1.1); /* Aumenta el tamaño en un 10% al pasar el cursor */
+    transform: scale(1.1); 
 }
 
 .linkedin:hover i {
-    color: #0A66C2; /* Cambia el color del icono de LinkedIn al pasar el cursor */
+    color: #0A66C2; 
 }
 
 .github:hover i {
-    color: #24292e; /* Cambia el color del icono de GitHub al pasar el cursor */
+    color: #24292e; 
 }
 
 .facebook:hover i {
-    color: #3b5998; /* Cambia el color del icono de Facebook al pasar el cursor */
+    color: #3b5998; 
 }
 
 .instagram:hover i {
-    color: #e4405f; /* Cambia el color del icono de Instagram al pasar el cursor */
+    color: #e4405f; 
 }
 
 .social-media:hover .social-icon:not(:hover) {
-    transform: scale(0.9); /* Reduce el tamaño de los iconos que no están siendo activados */
-    filter: blur(1px); /* Aplica un ligero desenfoque a los iconos no hover */
+    transform: scale(0.9);
+    filter: blur(1px); 
 }
 
 
