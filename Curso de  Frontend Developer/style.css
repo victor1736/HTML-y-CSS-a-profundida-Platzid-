@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ------------------------------------------------------ */
+
+main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./img/dragon3.png');
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+}
+
+.card-container {
+    width: 350px;
+    height: 450px;
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 5px solid rgb(40, 159, 218);
+    box-shadow: 5px 10px 50px #0d007e65;
+}
+
+.img-background {
+    display: inline-block;
+    width: 100%;
+    height: 160px;
+    background: url("./img/dragon2.png") center/cover no-repeat;
+    z-index: 10;
+}
+
+.card-img-container {
+    display: inline-block;
+    position: absolute;
+    top: 90px;
+    left: 104px;
+    width: 130px;
+    height: 130px;
+    perspective: 1000px; 
+}
+
+.card-img-profile {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; 
+    border: 5px solid rgb(40, 159, 218);
+    background: url("./img/perfil2.png") center/cover no-repeat;
+    transition: transform 0.5s ease;
+    transform-style: preserve-3d; /* Mantiene la transformación 3D */
+}
+
+.card-img-container:hover .card-img-profile {
+    transform: rotateY(180deg); /* Gira la imagen 180 grados en el eje Y */
+}
+
+.card-img-profile::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    border-radius: 50%;
+    background: url("./img/perfil5.png") center/cover no-repeat;
+    backface-visibility: hidden; /* Oculta la otra imagen en la parte trasera */
+    transform: rotateY(180deg); /* Inicialmente gira 180 grados para ocultarla */
+}
+
+/* ------------------------------------------------------ */
+
+.card_profile {
+    display: flex;
+    width: 100%;
+    margin: 45px auto 20px;
+    flex-direction: column;
+}
+
+.card_profile h1 {
+    width: 65%;
+    margin: 10px auto 7px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.65);
+    color: #025395;
+}
+
+.card_profile p {
+    padding: 0 30px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* ------------------------------------------------------ */
+
+.card_information {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    margin-top: 35px;
+    font-size: 1.2rem;
+}
+
+.country {
+    display: grid;
+    grid-template-columns: 20px 60px;
+}
+
+
+.card_information img {
+    width: 15px;
+}
+
+.mail {
+    display: grid;
+    grid-template-columns: 20px 85px;
+}
+
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+
+.social-media {
+    background-color: #20e916; /* Fondo del contenedor */
+    display: flex;
+    justify-content: space-around; /* Distribución equitativa de los elementos */
+    padding: 30px; /* Espaciado interno */
+}
+
+.social-icon {
+    width: 40px; /* Ancho inicial de los iconos */
+    height: 40px; /* Altura inicial de los iconos */
+    transition: transform 0.3s ease; /* Transición para el cambio de tamaño */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.social-icon i {
+    font-size: 24px; /* Tamaño del icono */
+    color: #fff; /* Color del icono */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Aumenta el tamaño en un 10% al pasar el cursor */
+}
+
+.linkedin:hover i {
+    color: #0A66C2; /* Cambia el color del icono de LinkedIn al pasar el cursor */
+}
+
+.github:hover i {
+    color: #24292e; /* Cambia el color del icono de GitHub al pasar el cursor */
+}
+
+.facebook:hover i {
+    color: #3b5998; /* Cambia el color del icono de Facebook al pasar el cursor */
+}
+
+.instagram:hover i {
+    color: #e4405f; /* Cambia el color del icono de Instagram al pasar el cursor */
+}
+
+.social-media:hover .social-icon:not(:hover) {
+    transform: scale(0.9); /* Reduce el tamaño de los iconos que no están siendo activados */
+    filter: blur(1px); /* Aplica un ligero desenfoque a los iconos no hover */
+}
+
+
+
+
+
