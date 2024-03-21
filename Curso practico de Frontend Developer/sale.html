@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #acd9b2;
+            --white: #ffffff;
+            --black: #000000;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Quicksand", sans-serif;
+        }
+        .cards-container {
+            --card-size: 240px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, var(--card-size));
+            gap: 26px;
+            place-content: center;
+        }
+        .product-card {
+            width: var(--card-size);
+        }
+        .product-card img {
+            width: var(--card-size);
+            height: var(--card-size);   
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .product-info {
+            display: flex;
+            justify-self: space-between;
+            align-items: center;
+
+        }
+        .product-card .product-info  h3   {
+            margin-bottom: 0;    
+            margin-top: 2px;
+        }
+        .product-card .product-info  p:nth-child(2)   {
+            color: var(--very-light-pink);
+            font-size: var(--sm);
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .product-card .product-info  p:nth-child(3)   {
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .product-card .product-info  figure img{
+            width: 35px;
+            height: 35px;
+        }
+        
+        @media (max-width: 640px) {
+            .cards-container {
+                --card-size:140px;
+            }
+
+        }
+ 
+
+    </style>
+</head>
+<body>
+    <section class="main-container">
+        <div class="cards-container">
+
+
+            <div class="product-card">
+                <img src="./img_product/biker.jpg" alt="product-img">
+                <div class="product-info">
+                    <div>
+                        <h3>Bicibleta</h3>
+                        <p>vehiculo para desplazarse sin motor de dos ruedas</p>
+                        <p>$1500,0</p>
+                    </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="sale">
+                        </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./img_product/biker.jpg" alt="product-img">
+                <div class="product-info">
+                    <div>
+                        <h3>Bicibleta</h3>
+                        <p>vehiculo para desplazarse sin motor de dos ruedas</p>
+                        <p>$1500,0</p>
+                    </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="sale">
+                        </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./img_product/biker.jpg" alt="product-img">
+                <div class="product-info">
+                    <div>
+                        <h3>Bicibleta</h3>
+                        <p>vehiculo para desplazarse sin motor de dos ruedas</p>
+                        <p>$1500,0</p>
+                    </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="sale">
+                        </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./img_product/biker.jpg" alt="product-img">
+                <div class="product-info">
+                    <div>
+                        <h3>Bicibleta</h3>
+                        <p>vehiculo para desplazarse sin motor de dos ruedas</p>
+                        <p>$1500,0</p>
+                    </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="sale">
+                        </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./img_product/biker.jpg" alt="product-img">
+                <div class="product-info">
+                    <div>
+                        <h3>Bicibleta</h3>
+                        <p>vehiculo para desplazarse sin motor de dos ruedas</p>
+                        <p>$1500,0</p>
+                    </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="sale">
+                        </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./img_product/biker.jpg" alt="product-img">
+                <div class="product-info">
+                    <div>
+                        <h3>Bicibleta</h3>
+                        <p>vehiculo para desplazarse sin motor de dos ruedas</p>
+                        <p>$1500,0</p>
+                    </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="sale">
+                        </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./img_product/biker.jpg" alt="product-img">
+                <div class="product-info">
+                    <div>
+                        <h3>Bicibleta</h3>
+                        <p>vehiculo para desplazarse sin motor de dos ruedas</p>
+                        <p>$1500,0</p>
+                    </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="sale">
+                        </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./img_product/biker.jpg" alt="product-img">
+                <div class="product-info">
+                    <div>
+                        <h3>Bicibleta</h3>
+                        <p>vehiculo para desplazarse sin motor de dos ruedas</p>
+                        <p>$1500,0</p>
+                    </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="sale">
+                        </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./img_product/biker.jpg" alt="product-img">
+                <div class="product-info">
+                    <div>
+                        <h3>Bicibleta</h3>
+                        <p>vehiculo para desplazarse sin motor de dos ruedas</p>
+                        <p>$1500,0</p>
+                    </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="sale">
+                        </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./img_product/biker.jpg" alt="product-img">
+                <div class="product-info">
+                    <div>
+                        <h3>Bicibleta</h3>
+                        <p>vehiculo para desplazarse sin motor de dos ruedas</p>
+                        <p>$1500,0</p>
+                    </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="sale">
+                        </figure>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+</body>
+</html>
